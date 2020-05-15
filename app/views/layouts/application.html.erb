@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Write</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <%= link_to "Write", root_path, class: "header__title--text" %>
+      </div>
+      <div class="header__main">
+        <div class="header__main__menu1">
+          <%# <%= link_to "ABOUT", '#', class: "header__main__menu1--btn"  %>
+          <a href="#jump2">ABOUT</a>
+        </div>
+        <%# <div class="header__main__menu1"> %>
+          <%# <%= link_to "NEW", new_post_path, class: "header__main__menu2--btn" %> 
+        <%# </div> %>
+        <%# <div class="header__main__menu3">
+          <%= link_to "PHOTO", new_image_path, class: "header__main__menu3--btn" %>
+        <%# </div> %> 
+        <div class="header__main__menu4">
+          <%= link_to "CONTACT", "#", class: "header__main__menu4--btn" %>
+        </div>
+        <div class="header__main__right">
+        <% if user_signed_in? %>
+            <%= link_to "USER PAGE", user_path(current_user), class: "header__right--btn" %>
+            <%= link_to "NEW POST", new_post_path, class: "header__right--btn" %>
+            <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
+          <% else %>
+            <%= link_to "LOGIN", new_user_session_path, class: "header__right--btn" %>
+            <%= link_to "SIGN UP", new_user_registration_path, class: "header__right--btn" %>
+          <% end %>
+        </div>
+      </div>
+    </header>
+    <div class="contents__top">
+      <div class="content__imgBox">
+        <div class="content__imgBox--img">
+          <img src="/assets/morocco.png">
+        </div>
+      </div>
+    </div>
+    <div class="contents__bottom">
+      <%= yield %>
+    </div>
+    <footer class="footer">
+      <a name="jump2"></a>
+      <div class="footer__main">  
+        <div class="footer__main__content__leftBox">
+          <i class="fab fa-twitter-square fa-3x">
+          <%= link_to "a",'https://twitter.com/t4_taka',class: :twitter%>
+          </i>
+          <u class="fab fa-github-square fa-3x">
+          <%= link_to "a",'https://github.com/t4takasuka', class: :github%>
+          </u>
+          <q class="fab fa-youtube fa-3x">
+          <%= link_to "a",'https://www.youtube.com/channel/UCJZdFTcKSSKDEMuZ73eD8xw?view_as=subscriber', class: :youtube%>
+          </q>
+        </div>
+        <div class="footer__user--img">
+          <img src="/assets/takasuka.png">
+        </div>
+        <div class="fotter__main__content__userBox">
+          <li>takasuka toshinobu</li>
+          <pre>     skill: HTML・CSS・Ruby・Ruby on Rails</pre>
+          <pre>              SQL・Git・ GitHub・Haml・SCSS</pre>
+          <pre>     mail: example@gmail.com</pre>
+        </div>
+        <div class="footer__main__content__rightBox">
+          <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
+            <%= form.text_field :keyword, placeholder: "keyword", class: "search-input" %>
+            <%= form.submit "search", class: "search-btn" %>
+          <% end %>
+          <%# <div class="form-group"> %>
+            <%# <input type='text' id="keyword" class="form-control" placeholder>
+            <button type="button" id="submit" class="btn">search</button> %>
+          <%# </div> %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

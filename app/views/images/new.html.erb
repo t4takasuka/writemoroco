@@ -1,0 +1,10 @@
+<div class="content__title">
+new photo
+</div>
+
+<%= form_with model: @image, class: :form, local: true do |form| %>
+  <%# <%= form.text_field :image, placeholder: :title, class: :form__title %> 
+  <%= form.file_field :image, class: :"input-box__image__file" %>
+  <%= form.submit 'SEND', class: :form__btn %>
+
+<% end %>

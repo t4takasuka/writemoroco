@@ -1,0 +1,8 @@
+<div class=contents__images>
+  <div class=contents__images__main>
+    <% @images.each do |image| %>
+      <%# <%= image.image %> 
+      <%= image_tag image.image.url, class: :contents__image__1%>
+    <% end %>
+  </div>
+</div>

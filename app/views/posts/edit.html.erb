@@ -1,0 +1,9 @@
+<div class="content__title">
+edit post
+</div>
+
+<%= form_with model: @post, class: :form, local: true do |form| %>
+  <%= form.text_field :title, placeholder: :title, class: :form__title %>
+  <%= form.text_area :content, placeholder: :write, class: :form__text %>
+  <%= form.submit 'SEND', class: :form__btn %>
+<% end %>

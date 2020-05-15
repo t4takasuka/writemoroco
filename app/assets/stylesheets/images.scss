@@ -1,0 +1,14 @@
+.contents__images{
+  background-color: red;
+  height: 100vh;
+  flex-wrap: wrap;
+  .contents__images__main{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    .contents__images__main__1{
+      
+    }
+  }
+}

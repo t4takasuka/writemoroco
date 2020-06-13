@@ -1,0 +1,445 @@
+body {
+  background-color: #63b7af;
+  min-width: 650px;
+  font-family: "M PLUS Rounded 1c";
+}
+
+body .header {
+  height: 180px;
+  width: 100%;
+  padding: 0 250px;
+  color: black;
+}
+
+body .header__title {
+  font-size: 50px;
+  line-height: 55px;
+  padding-top: 30px;
+}
+
+body .header__title--text {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+body .header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  font-size: 18;
+}
+
+body .header__main__menu1 a {
+  text-decoration: none;
+  line-height: 56px;
+  color: black;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+body .header__main__menu2--btn {
+  text-decoration: none;
+  line-height: 56px;
+  color: black;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+body .header__main__menu3--btn {
+  text-decoration: none;
+  line-height: 56px;
+  color: black;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+body .header__main__menu4--btn {
+  text-decoration: none;
+  line-height: 56px;
+  color: black;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+body .header__main__right {
+  line-height: 56px;
+  padding-left: 700px;
+}
+
+body .header__main__right .header__right--btn {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+body .contents__top {
+  margin: 0 auto 0;
+  width: 80%;
+}
+
+body .contents__top .content__imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .contents__top .content__imgBox--img {
+  margin: 0 auto;
+  height: 70%;
+  width: 80%;
+}
+
+body .contents__bottom {
+  margin: 30px auto;
+  background-color: #d4f3ef;
+  height: 100vh;
+  width: 60%;
+  overflow: scroll;
+}
+
+body .contents__bottom .content__imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .contents__bottom .content__imgBox--img {
+  margin: 0 auto;
+  height: 70%;
+  width: 70%;
+}
+
+body .contents__bottom .content {
+  margin-top: 20px;
+  padding: 0px 50px 50px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .contents__bottom .content__left {
+  width: 700px;
+  padding: 0 10px 0 20px;
+}
+
+body .contents__bottom .content__left__image {
+  width: 200px;
+  height: 180px;
+  position: relative;
+}
+
+body .contents__bottom .content__left__image__url {
+  width: 200px;
+  height: 180px;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+}
+
+body .contents__bottom .content__right {
+  width: calc(100%-80px);
+}
+
+body .contents__bottom .content__right__top {
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+body .contents__bottom .content__right__bottom {
+  font-size: 20px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+body .contents__bottom .content__right__bottom--userName--btn {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+body .contents__bottom .content__right__bottom--date {
+  margin-left: 20px;
+}
+
+body .contents__bottom .content__title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+}
+
+body .contents__bottom .postTitle {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body .contents__bottom .postDate {
+  font-size: 15px;
+  color: #999;
+  text-align: center;
+}
+
+body .contents__bottom .postAuthor {
+  font-size: 15px;
+  color: #999;
+  text-align: center;
+}
+
+body .contents__bottom .postImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .contents__bottom .postImage .mypage__image {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+body .contents__bottom .postManage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+body .contents__bottom .postManage__edit {
+  display: block;
+  border-radius: 5px;
+  color: black;
+  background-color: #ee8572;
+  padding: 0 10px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+body .contents__bottom .postManage__delete {
+  display: block;
+  border-radius: 5px;
+  color: black;
+  background-color: #ee8572;
+  padding: 0 10px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+body .contents__bottom .postText {
+  margin: 20px 30px;
+  font-size: 20px;
+  padding: 0 150px;
+}
+
+body .form {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px 50px 0 50px;
+  font-size: 30px;
+}
+
+body .form__title {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+body .form__text {
+  display: block;
+  width: 100%;
+  height: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body .form__btn {
+  display: block;
+  width: 30%;
+  margin: 15px auto 0;
+}
+
+body .user {
+  padding: 15px 30px;
+}
+
+body .footer {
+  padding: 0px 280px 30px 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .footer__main {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+body .footer__main li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body .footer__main__content__leftBox {
+  width: 30%;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+body .footer__main__content__leftBox .fa-twitter-square {
+  color: #00bfff;
+  padding-right: 20px;
+}
+
+body .footer__main__content__leftBox .fa-youtube {
+  color: #c4302b;
+  padding-left: 20px;
+}
+
+body .footer__main__content__rightBox {
+  width: 30%;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+body .footer__main i {
+  position: relative;
+}
+
+body .footer__main i .twitter {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+body .footer__main u {
+  position: relative;
+}
+
+body .footer__main u .github {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+body .footer__main q {
+  position: relative;
+}
+
+body .footer__main q .youtube {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+body .header__title--text:hover {
+  color: #ee8572;
+}
+
+body a:hover {
+  color: #ee8572;
+}
+
+body .header__main__menu2--btn:hover {
+  color: #ee8572;
+}
+
+body .header__main__menu3--btn:hover {
+  color: #ee8572;
+}
+
+body .header__main__menu4--btn:hover {
+  color: #ee8572;
+}
+
+body .content__right__top:hover {
+  color: #ee8572;
+}
+
+body .content__page {
+  text-align: center;
+}
+
+body .content__right__bottom--userName--btn:hover {
+  color: #ee8572;
+}
+
+body .fotter__main__content__userBox {
+  width: 40%;
+  padding-top: 10px;
+}
+
+body .input-box__image__file {
+  display: none;
+  margin-top: 20px;
+}
+
+body label {
+  background-color: white;
+  color: #999;
+  cursor: pointer;
+  border: 0.5px solid gray;
+}
+
+body .header__right--btn:hover {
+  color: #ee8572;
+}
+
+body .footer__user--img {
+  margin: 30px 20px 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+body .container {
+  margin: 20px 30px;
+  font-size: 20px;
+  padding: 0 150px;
+}
+
+body .comments {
+  margin: 20px 200px;
+  font-size: 20px;
+  background-color: #faf2f2;
+}
+
+body h4 {
+  text-align: center;
+}
+
+body h5 {
+  text-align: center;
+}
+/*# sourceMappingURL=posts.css.map */

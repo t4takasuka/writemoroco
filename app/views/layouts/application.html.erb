@@ -18,17 +18,7 @@
       </div>
       <div class="header__main">
         <div class="header__main__menu1">
-          <%# <%= link_to "ABOUT", '#', class: "header__main__menu1--btn"  %>
           <a href="#jump2">ABOUT</a>
-        </div>
-        <%# <div class="header__main__menu1"> %>
-          <%# <%= link_to "NEW", new_post_path, class: "header__main__menu2--btn" %> 
-        <%# </div> %>
-        <%# <div class="header__main__menu3">
-          <%= link_to "PHOTO", new_image_path, class: "header__main__menu3--btn" %>
-        <%# </div> %> 
-        <div class="header__main__menu4">
-          <%= link_to "CONTACT", "#", class: "header__main__menu4--btn" %>
         </div>
         <div class="header__main__right">
         <% if user_signed_in? %>
@@ -80,10 +70,6 @@
             <%= form.text_field :keyword, placeholder: "keyword", class: "search-input" %>
             <%= form.submit "search", class: "search-btn" %>
           <% end %>
-          <%# <div class="form-group"> %>
-            <%# <input type='text' id="keyword" class="form-control" placeholder>
-            <button type="button" id="submit" class="btn">search</button> %>
-          <%# </div> %>
         </div>
       </div>
     </div>
